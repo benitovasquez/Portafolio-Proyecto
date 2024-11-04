@@ -1,0 +1,109 @@
+:root{
+    --color-scrollbar:#D3D3D4;
+    --backgroud-scrollbar: #eee;
+}
+
+
+/*Scroll Chrom*/
+.content__page::-webkit-scrollbar{
+    width: 25px;
+    background-color: transparent;
+}
+.content__page::-webkit-scrollbar-thumb{
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+.content__page:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+.content__page:hover::-webkit-scrollbar-thumb:hover{
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-secundary);
+}
+
+
+.content__page:hover::-webkit-scrollbar-track{
+    background-color: transparent;
+    margin: 40px 0;
+
+}
+
+/*Scroll Moz*/
+.content__page::-moz-scrollbar-track {
+    background-color: transparent;
+    margin: 40px 0;
+}
+
+.content__page::-moz-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.content__page:hover::-moz-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.content__page:hover::-moz-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-secundary);
+}
+
+/*Scroll Chrom barra lateral*/
+.layout__aside{
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+/* WebKit browsers */
+.layout__aside::-webkit-scrollbar{
+    width: 25px;
+    background-color: var(--color-secundary);
+}
+.layout__aside::-webkit-scrollbar-thumb{
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+.layout__aside:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
+.layout__aside:hover::-webkit-scrollbar-thumb:hover{
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
+.layout__aside:hover::-webkit-scrollbar-track{
+    background-color: transparent;
+    margin: 40px 0;
+}
+
+/* Firefox */
+.layout__aside {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-principal) var(--color-secundary);
+}
+
+.layout__aside:hover {
+    scrollbar-color: var(--color-principal) transparent;
+}
+
+.layout__aside::-moz-scrollbar-track {
+    background-color: transparent;
+    margin: 40px 0;
+}
+
+.layout__aside::-moz-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.layout__aside:hover::-moz-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
+
+.layout__aside:hover::-moz-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
