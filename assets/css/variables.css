@@ -1,0 +1,24 @@
+/*Definicion de Variables*/
+:root{
+    --color-principal:#ffffff;
+    --color-secundary: #04B4E0;
+
+    --color-background: #F2F7F9;
+    --color-transparent: transparent;
+    
+    --color-icons:#B8B6B7;
+    --color-title: #222222;
+    --color-subtitle: #888888;
+    --color-text: #555;
+
+
+    --color-border-reviews:#E5E6E7;
+    --color-company:#A5A6A7;
+    --color-scrollbar:#D3D3D4;
+    --backgroud-scrollbar: #eee;
+
+    --color-backgroud-certificate:#f5f5f5;
+    --color-background-contact: #FCFCFC;
+    --color-background-image: url("../img/fondo.png");
+
+}
