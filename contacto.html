@@ -13,97 +13,24 @@
     <link rel="stylesheet" href="./assets/css/loader.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
-
     <!--Scripts Js-->
     <script src="./assets/js/menu.js" defer></script>
     <script src="./assets/js/map.js" defer></script>
+    <script src="./assets/js/loadComponents.js" defer></script>
 </head>
 <body>
     <!-- Layout principal -->
     <div class="layout">
         <!-- Barra lateral (info usuario) -->
-        <aside class="layout__aside">
-            <section class="aside__user-info">
-                <!-- Información principal -->
-                <div class="user-info__general">
-                    <div class="user-info__container-image">
-                        <img src="./assets/img/default-user.jpg" alt="Foto de perfil de usuario" class="user-info__image">
-                    </div>
-                    <h2 class="user-info__name">R. Benito Vásquez R.</h2>
-                    <h4 class="user-info__job">Desarrollador Web</h4>
-                </div>
-                <!-- Menú de navegación -->
-                <nav class="layout__menu">
-                    <ul class="menu__list">
-                        <li class="menu__option">
-                            <a href="index.html" class="menu__link">
-                                <i class="fa-solid fa-house menu__icon">
-                                </i>
-                                <span class="menu__overlay">Home</span>
-                            </a>
-                        </li>
-                        <li class="menu__option">
-                            <a href="sobre-mi.html" class="menu__link">
-                                <i class="fa-solid fa-user menu__icon">
-                                </i>
-                                <span class="menu__overlay">Sobre Mi</span>
-                            </a>
-                        </li>
-                        <li class="menu__option">
-                            <a href="curriculum.html" class="menu__link">
-                                <i class="fa-solid fa-graduation-cap menu__icon">
-                                </i>
-                                <span class="menu__overlay">Curriculum</span>
-                            </a>
-                        </li>
-                        <li class="menu__option">
-                            <a href="portafolio.html" class="menu__link">
-                                <i class="fa-solid fa-briefcase menu__icon ">
-                                </i>
-                                <span class="menu__overlay">Portafolio</span>
-                            </a>
-                        </li>
-                        <li class="menu__option">
-                            <a href="blog.html" class="menu__link">
-                                <i class="fa-solid fa-book menu__icon ">
-                                </i>
-                                <span class="menu__overlay">Blog</span>
-                            </a>
-                        </li>
-                        <li class="menu__option">
-                            <a href="contacto.html" class="menu__link">
-                                <i class="fa-solid fa-envelope menu__icon menu__link--active">
-                                </i>
-                                <span class="menu__overlay menu__link--active">Contacto</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- Links de redes sociales -->
-                <div class="user-info__links">
-                    <ul class="links__social">
-                        <li class="social__option"><a href="#" class="social_link"><i class="fa-brands fa-github social__icon"></i></a></li>
-                        <li class="social__option"><a href="#" class="social_link"><i class="fa-brands fa-linkedin-in social__icon"></i></a></li>
-                        <li class="social__option"><a href="#" class="social_link"><i class="fa-brands fa-discord social__icon"></i></a></li>
-                    </ul>
-                </div>
-                <!-- Botón de CV -->
-                <div class="user-info__buttons">
-                    <a href="#" class="user-info__btn">Descarga CV</a>
-                </div>
-                <!-- Footer -->
-                <footer class="user-info__footer">
-                    &copy; 2024 Ricardo Benito Vásquez Roca WEB
-                </footer>
-            </section>
-        </aside>
+        <aside class="layout__aside" id="sidebar"></aside>
+
         <!--Menu responsive-->
-        <div class="layout__menu-toggle">
+        <div id="menu-toggle" class="layout__menu-toggle">
             <i class="menu-toggle__icon fa-solid fa-bars"></i>
             <i class="menu-toggle__icon fa-solid fa-xmark"></i>
         </div>
+
         <!-- Contenido principal -->
-        <!--Contenido que cambia por cada pagina-->
         <main class="layout__content">
             <section class="content__page content__contact">
                 <header class="contact__header">
@@ -160,7 +87,6 @@
                             </div>
                         </form>
                         <input type="submit" class="form__button" value="Enviar Mensaje">
-
                     </section>
                 </div>
             </section>
