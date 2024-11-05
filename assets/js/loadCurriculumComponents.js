@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
     loadComponent('sidebar', 'components/Sidebar.html');
     loadComponent('menu-toggle', 'components/MenuToggle.html');
     loadComponent('main-content', 'components/curriculum/MainContent.html');
+    loadComponent('curriculum-header', 'components/curriculum/Header.html');
+    loadComponent('curriculum-navbar', 'components/curriculum/Navbar.html');
+    loadComponent('curriculum-gallery', 'components/curriculum/Gallery.html');
 });
 
 function loadComponent(id, url) {
