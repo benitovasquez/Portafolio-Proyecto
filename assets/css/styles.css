@@ -186,6 +186,7 @@ body{
 .user-info__footer{
     position: absolute;
     bottom: 2rem;
+    left: 7.5rem;
     font-size: 1.2rem;
 }
 
